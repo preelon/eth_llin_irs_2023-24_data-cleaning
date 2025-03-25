@@ -3,7 +3,7 @@ rm(list = ls())
 #libraries
 library("tidyverse")
 
-#reading the 2023 llin data 
+#reading the 2024 IRS data 
 irs_2024 <- read_csv("data/raw/IRS_2024.csv") 
 
 
@@ -19,7 +19,7 @@ names(irs_2024)
 
 table(irs_2024$id_1082, useNA = "always") #32 entries
 
-#standardizing the 2023 llin dataset
+#standardizing the IRS dataset
 irs_2024 <- irs_2024 |>
   janitor::clean_names() |>
   select(-id_1082) |>
