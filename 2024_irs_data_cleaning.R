@@ -61,7 +61,7 @@ irs_2024_sf_joined <- irs_2024_sf_joined |>
          region= region_1082,
          zone= zone_1082,
          woreda= woreda_1082,
-         irs_sprayed_hhs = irs_hs,
+         sprayed_hhs = irs_hs,
          source= souce)
 
 #saving the cleaned data
